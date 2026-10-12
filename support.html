@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Backseat Runner Support</title>
+<meta name="description" content="Help and support for Backseat Runner, an offline endless runner for iPhone and iPad: how to play, power-ups, license plates, saving and resetting progress.">
+<style>
+:root{
+  --bg:#faf6f0; --card:#ffffff; --text:#2a2320; --muted:#655a52; --border:#e4dacd;
+  --accent:#8f520a; --accent-soft:#fbecd3; --kbd:#f1ebe3;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1f1a18; --card:#29231f; --text:#efe7df; --muted:#b8aca2; --border:#3d3430;
+    --accent:#f0b54a; --accent-soft:#3a2d1c; --kbd:#352d29;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--border);background:var(--card)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding-top:14px;padding-bottom:14px}
+.brand{font-weight:800;font-size:18px;letter-spacing:.01em;color:var(--text);text-decoration:none}
+.brand span{display:inline-block;margin-right:8px;padding:1px 7px;border:2px solid currentColor;border-radius:5px;font-size:13px;letter-spacing:.08em}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;margin-left:16px}
+nav a:first-child{margin-left:0}
+nav a[aria-current="page"]{color:var(--text);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+main.wrap{padding-top:28px;padding-bottom:40px}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+.lede{font-size:18px;color:var(--muted);margin:0 0 6px}
+.date{color:var(--muted);font-size:15px;margin:0 0 20px}
+h2{font-size:21px;line-height:1.3;margin:36px 0 10px;padding-top:4px}
+h3{font-size:17px;line-height:1.35;margin:22px 0 4px}
+p,ul,ol{margin:0 0 14px}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+kbd{font:600 .85em/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--kbd);border:1px solid var(--border);border-bottom-width:2px;border-radius:5px;padding:2px 6px;white-space:nowrap}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 18px;margin:0 0 8px}
+.toc p{margin:0 0 4px;font-weight:700;font-size:15px}
+.toc ul{margin:0;padding-left:20px;columns:2;column-gap:28px}
+.toc li{margin:2px 0;break-inside:avoid}
+.contact{background:var(--accent-soft);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;padding:14px 18px}
+.contact p{margin:0 0 6px}
+.contact p:last-child{margin:0}
+.email{font-weight:700;word-break:break-word}
+.powers{display:grid;gap:12px;margin:0 0 14px;padding:0;list-style:none}
+.powers li{margin:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px}
+.powers b{display:block;font-size:17px}
+.powers small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.tiers{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:15px;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.tiers th,.tiers td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.tiers tr:last-child td{border-bottom:0}
+.tiers th{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 16px;margin:0 0 14px}
+summary{cursor:pointer;font-weight:700}
+details[open] summary{margin-bottom:8px}
+.faq h3{margin-top:26px}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:14px;padding:18px 0 28px}
+footer p{margin:0 0 4px}
+@media (max-width:480px){
+  body{font-size:16px}
+  h1{font-size:26px}
+  h2{font-size:19px}
+  .toc ul{columns:1}
+  .tiers{font-size:14px}
+  .tiers th,.tiers td{padding:7px 9px}
+}
+@media print{
+  header nav,footer,.toc{display:none}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="support.html"><span>BSR</span>Backseat Runner</a>
+    <nav aria-label="Pages">
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Backseat Runner Support</h1>
+  <p class="lede">Remember making your fingers run along the car window on a road trip? Help them jump, slide and snack their way down the road.</p>
+  <p class="date">Last updated: October 11, 2026</p>
+
+  <div class="contact">
+    <p><strong>Need help?</strong> Email <a class="email" href="mailto:backseatrunner@gmail.com">backseatrunner@gmail.com</a></p>
+    <p>Please include your device model, its iOS version and what happened.</p>
+  </div>
+
+  <nav class="toc" aria-label="On this page" style="margin-top:20px">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#how-to-play">How to play</a></li>
+      <li><a href="#the-road">The road</a></li>
+      <li><a href="#bandages">Bandages and continues</a></li>
+      <li><a href="#snacks">Snacks, missions and levels</a></li>
+      <li><a href="#shop">The shop</a></li>
+      <li><a href="#power-ups">Power-ups</a></li>
+      <li><a href="#plates">License plates</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="how-to-play">How to play</h2>
+  <ul>
+    <li><strong>Jump:</strong> tap anywhere on the screen. Hold your finger down to jump higher; let go early for a short hop.</li>
+    <li><strong>Slide:</strong> hold the <strong>Slide</strong> button in the bottom-left corner to slide under low branches and birds. Let go to stand back up.</li>
+    <li><strong>Pause:</strong> use the pause button at the top of the screen. The speaker button turns game sound on or off.</li>
+    <li><strong>Keyboard (iPad with a keyboard attached):</strong> <kbd>Space</kbd>, <kbd>&uarr;</kbd> or <kbd>W</kbd> to jump, <kbd>&darr;</kbd> or <kbd>S</kbd> to slide.</li>
+  </ul>
+  <p>Jump over hydrants and other things on the sidewalk, slide under what hangs low, and see how many miles the car takes you.</p>
+
+  <h2 id="the-road">The road</h2>
+  <ul>
+    <li><strong>Speed:</strong> the car slowly speeds up the farther you go, with busy stretches followed by calmer ones so you can catch your breath.</li>
+    <li><strong>Stop signs</strong> bring the car to a full stop, <strong>school zones</strong> slow it down, and <strong>highway</strong> stretches speed it up. Watch for the road-sign alerts at the top of the screen.</li>
+    <li><strong>The route changes every mile:</strong> the suburbs, farm country, the city, the desert and the mountains, and then around again.</li>
+  </ul>
+
+  <h2 id="bandages">Bandages and continues</h2>
+  <p>The <strong>bandage</strong> on your finger is an extra life: with it, you can take one hit and keep running. If you lose it, keep an eye out for a new bandage on the road.</p>
+  <p>If you crash without a bandage and have enough snacks, you get a few seconds to <strong>continue</strong> by spending them. The first continue in a run costs 25 snacks, and each extra continue in the same run costs twice as much as the one before.</p>
+
+  <h2 id="snacks">Snacks, missions and levels</h2>
+  <ul>
+    <li><strong>Snacks</strong> are the in-game currency. Grab them along the road; they are added to your total at the end of each run.</li>
+    <li>You always have <strong>three missions</strong>, such as &ldquo;Jump 4 fire hydrants in one run&rdquo; or &ldquo;Slide under 5 birds or branches in one run&rdquo;. Each finished mission pays out snacks and is replaced by a new one.</li>
+    <li>Every three missions you finish raises your <strong>level</strong>, and each level gives you a bigger snack bonus on every run.</li>
+  </ul>
+
+  <h2 id="shop">The shop</h2>
+  <p>Spend your snacks in the shop on <strong>25 hand styles</strong>, <strong>sleeves</strong>, <strong>cars</strong> and <strong>power-ups</strong>. Everything in the shop is bought with snacks you earn by playing. There are no real-money purchases and no ads.</p>
+
+  <h2 id="power-ups">Power-ups</h2>
+  <ul class="powers">
+    <li><b>Road Rage</b>The car floors it to 100 mph for 10 seconds and you smash straight through obstacles.<small>Tap its button during a run. One per run.</small></li>
+    <li><b>Sugar Rush</b>For 15 seconds, snacks and plates fly to you, and every snack counts double.<small>Tap its button during a run.</small></li>
+    <li><b>Spare Bandage</b>Start a run with two bandages, and carry up to two for the whole run.<small>Used automatically when your next run starts.</small></li>
+    <li><b>Plate Radar</b>For one run, rare plates start showing up twice as early and three times as often.<small>Used automatically when your next run starts.</small></li>
+  </ul>
+  <p>Spare Bandage and Plate Radar can be switched on or off before a run with the <strong>Next run</strong> buttons on the start screen, so you can save them for later.</p>
+
+  <h2 id="plates">License plates</h2>
+  <p>Plates from all 50 U.S. states float along the road, often above obstacles or under branches. Collect each state once to fill your collection; tap <strong>Plates</strong> to see which ones you have.</p>
+  <p>Most states are common, but rarer plates only start turning up deeper into a run, and the farther you go the better your chances. Alaska and Hawaii are legendary: they only appear after many miles in a single run, and even then they are a long shot.</p>
+  <details>
+    <summary>Spoiler: which plates are rare?</summary>
+    <table class="tiers">
+      <thead><tr><th scope="col">Rarity</th><th scope="col">States</th><th scope="col">Starts appearing</th></tr></thead>
+      <tbody>
+        <tr><td>Uncommon</td><td>Idaho, Maine, Nebraska, New Hampshire, New Mexico, West Virginia</td><td>after about half a mile</td></tr>
+        <tr><td>Rare</td><td>Delaware, Montana, Rhode Island, South Dakota</td><td>after about 1.5 miles</td></tr>
+        <tr><td>Very rare</td><td>North Dakota, Vermont, Wyoming</td><td>after about 3 miles</td></tr>
+        <tr><td>Legendary</td><td>Alaska, Hawaii</td><td>after about 5 miles</td></tr>
+      </tbody>
+    </table>
+    <p>All other states are common and can show up at any time. Plate Radar halves these distances for one run.</p>
+  </details>
+
+  <section class="faq">
+    <h2 id="faq">Frequently asked questions</h2>
+
+    <h3>Is my progress saved?</h3>
+    <p>Yes. Your snacks, level, missions, shop items, power-ups, plates and best distance are saved automatically on your device as you play, and they are kept when you update the app.</p>
+
+    <h3>Can I move my progress to another iPhone or iPad?</h3>
+    <p>There are no accounts and no online sync, so progress does not move between devices on its own. If you set up a new device from an iCloud or computer backup of your old one, your progress normally comes along with the backup.</p>
+
+    <h3>How do I reset my progress and start over?</h3>
+    <p>There is no reset button in the game, so a fresh start is never one accidental tap away. To start over:</p>
+    <ol>
+      <li>Touch and hold the Backseat Runner icon, tap <strong>Remove App</strong>, then <strong>Delete App</strong>.</li>
+      <li>Reinstall Backseat Runner from the App Store.</li>
+    </ol>
+    <p>This permanently erases all of your progress, including snacks, items and plates. Nothing is stored online, so it cannot be recovered afterwards. (&ldquo;Offload App&rdquo; does not reset anything: it keeps your game data.)</p>
+
+    <h3>I lost my progress. Can you restore it?</h3>
+    <p>Sorry, no. Your progress exists only on your device, and I never receive a copy. If you had a device backup from before the progress was lost, restoring that backup may bring it back.</p>
+
+    <h3>I can&rsquo;t find Alaska or Hawaii. Are they really in the game?</h3>
+    <p>Yes. They are the rarest plates and only appear far into a single run. Your best chances: go as far as you can without crashing, use <strong>Plate Radar</strong> so rare plates turn up earlier and more often, keep <strong>Spare Bandages</strong> handy to survive longer, and use <strong>Sugar Rush</strong> to pull in plates that are hard to reach.</p>
+
+    <h3>How do power-ups work?</h3>
+    <p>Buy them in the shop with snacks. Road Rage and Sugar Rush appear as buttons during a run; tap one to use it. Spare Bandage and Plate Radar are used automatically at the start of your next run, unless you switch them off with the <strong>Next run</strong> buttons on the start screen. See <a href="#power-ups">Power-ups</a> above.</p>
+
+    <h3>Do I need an internet connection?</h3>
+    <p>No. The game runs completely offline, so it is perfect for the car, a plane or anywhere without signal.</p>
+
+    <h3>Are there in-app purchases or ads?</h3>
+    <p>No. Snacks are earned only by playing and cannot be bought with real money, and there are no ads.</p>
+
+    <h3>Does the app collect any data?</h3>
+    <p>No. There are no accounts, analytics or tracking, and the app never connects to the internet. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+    <h3>I can&rsquo;t hear any sound.</h3>
+    <p>Check that the speaker button in the game is not muted, that the volume is up, and that your device&rsquo;s silent mode is off: game sounds follow the silent switch. Game sounds play alongside your own music instead of stopping it.</p>
+
+    <h3>Which devices are supported?</h3>
+    <p>iPhone and iPad with iOS 17 or later. The game plays in landscape, so turn your device sideways.</p>
+  </section>
+
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p>Questions, bug reports and ideas are all welcome.</p>
+    <p>Email: <a class="email" href="mailto:backseatrunner@gmail.com">backseatrunner@gmail.com</a></p>
+    <p>Backseat Runner is made by Omayya Harvey Atout.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Backseat Runner &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
+    <p>This page uses no cookies, scripts or trackers.</p>
+  </div>
+</footer>
+</body>
+</html>
