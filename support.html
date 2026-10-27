@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Backseat Runner Support</title>
-<meta name="description" content="Help and support for Backseat Runner, an offline endless runner for iPhone and iPad: how to play, power-ups, license plates, saving and resetting progress.">
+<meta name="description" content="Help and support for Backseat Runner, an endless runner for iPhone and iPad that plays offline: how to play, the daily gift, the clean-run combo, Game Center, power-ups, license plates, ads, purchases, privacy choices and saving progress.">
 <style>
 :root{
   --bg:#faf6f0; --card:#ffffff; --text:#2a2320; --muted:#655a52; --border:#e4dacd;
@@ -91,11 +91,11 @@ footer p{margin:0 0 4px}
 <main class="wrap">
   <h1>Backseat Runner Support</h1>
   <p class="lede">Remember making your fingers run along the car window on a road trip? Help them jump, slide and snack their way down the road.</p>
-  <p class="date">Last updated: October 11, 2026</p>
+  <p class="date">Last updated: October 24, 2026</p>
 
   <div class="contact">
     <p><strong>Need help?</strong> Email <a class="email" href="mailto:backseatrunner@gmail.com">backseatrunner@gmail.com</a></p>
-    <p>Please include your device model, its iOS version and what happened.</p>
+    <p>Please include your device model, its iOS version and what happened. For a purchase, also say which item and roughly when. Never send payment details.</p>
   </div>
 
   <nav class="toc" aria-label="On this page" style="margin-top:20px">
@@ -103,11 +103,18 @@ footer p{margin:0 0 4px}
     <ul>
       <li><a href="#how-to-play">How to play</a></li>
       <li><a href="#the-road">The road</a></li>
+      <li><a href="#checkpoints">Checkpoints</a></li>
       <li><a href="#bandages">Bandages and continues</a></li>
       <li><a href="#snacks">Snacks, missions and levels</a></li>
+      <li><a href="#combo">The clean-run combo</a></li>
+      <li><a href="#daily">The daily gift</a></li>
+      <li><a href="#game-center">Game Center</a></li>
       <li><a href="#shop">The shop</a></li>
       <li><a href="#power-ups">Power-ups</a></li>
       <li><a href="#plates">License plates</a></li>
+      <li><a href="#ads">Ads</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#age">The age question and privacy</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -116,93 +123,292 @@ footer p{margin:0 0 4px}
   <h2 id="how-to-play">How to play</h2>
   <ul>
     <li><strong>Jump:</strong> tap anywhere on the screen. Hold your finger down to jump higher; let go early for a short hop.</li>
-    <li><strong>Slide:</strong> hold the <strong>Slide</strong> button in the bottom-left corner to slide under low branches and birds. Let go to stand back up.</li>
+    <li><strong>Slide:</strong> swipe down anywhere on the screen to slide under low branches, birds, parking gates, laundry lines, irrigation sprayers and camera drones. A quick swipe takes back the little hop your finger started, so the hand ducks straight away; a swipe during a jump drops the hand fast and slides as it lands. A slide lasts less than a second, and you can't slide again until the hand is back up. Jumping stands you straight back up. Prefer a button? Turn on <strong>Slide button</strong> in <a href="#settings">Settings</a>, and a <strong>Slide</strong> button appears in the bottom-left corner.</li>
+    <li id="perfect-jump"><strong>Perfect jump:</strong> high walls and tall box stacks are too tall for an ordinary jump, but one big jump timed perfectly clears them. Take off a little before one reaches you (the right moment lasts only about a twelfth of a second) and keep your finger down: the hand springs up higher, sails over, and &ldquo;Perfect!&rdquo; pops up. Too early or too late, it&rsquo;s an ordinary jump, and it hits; let go too soon and it hits too. The candy over a wall or a tall stack shows the perfect jump: jump just as its first piece reaches your hand, and hold. The trip report counts your perfect jumps. It keeps working once you own Double Jump, which is the easier way: their candy then shows the double jump instead. Tap again in the air after a perfect takeoff and it becomes a double jump, which works just as it does after any jump (it counts as a double jump, not a perfect one).</li>
+    <li><strong>Double Jump:</strong> with the Double Jump upgrade, tap again in the air, just before the top of your jump, to jump higher. It makes high walls and tall box stacks easy.</li>
+    <li><strong>Gumball Blaster:</strong> with the Gumball Blaster upgrade, tap the <strong>Blaster</strong> button in the bottom-left corner for <strong>8 seconds of non-stop popping</strong>: gumballs pop what&rsquo;s coming at you, such as hydrants, cones, fences, balls, box stacks, even the parking gate. A little gumball mark shows over each thing that is going to pop, and things you saw marked still pop after the 8 seconds are up. Pigeons don&rsquo;t get hit: they get shooed and fly off. Walls, wet cement and tree branches can&rsquo;t be popped, and nothing behind a wall gets marked until the wall has gone by. While a blast is on, the ring around the button runs down like a clock and flashes for the last 2 seconds. The dots on the button are your blasts: 2 to 5, one more for each rank. You get one back every 3 miles (the next dot fills up like a clock), and one at each <em>Moving day</em> sign until mile 1.5. The button lights up when a <em>Moving day</em> sign or a tall box stack is ahead and you have a blast ready. During a blast, in Road Rage, or with no blasts left, a tap does nothing.</li>
     <li><strong>Pause:</strong> use the pause button at the top of the screen. The speaker button turns game sound on or off.</li>
-    <li><strong>Keyboard (iPad with a keyboard attached):</strong> <kbd>Space</kbd>, <kbd>&uarr;</kbd> or <kbd>W</kbd> to jump, <kbd>&darr;</kbd> or <kbd>S</kbd> to slide.</li>
+    <li id="settings"><strong>Settings:</strong> tap the gear at the top of the start screen, the trip report or the pause screen. <strong>Slide button</strong> brings back a Slide button in the bottom-left corner instead of swiping down; it is also on the pause screen, and it is on to begin with when VoiceOver or Switch Control is running. Settings also has <strong>Restore purchases</strong>, <strong>Report an ad</strong> and <strong>Privacy policy</strong>, and <strong>Privacy choices</strong> where the law requires it (see <a href="#age">The age question and privacy</a>).</li>
+    <li><strong>Keyboard (iPad with a keyboard attached):</strong> <kbd>Space</kbd>, <kbd>&uarr;</kbd> or <kbd>W</kbd> to jump, <kbd>&darr;</kbd> or <kbd>S</kbd> to slide, <kbd>F</kbd> or <kbd>&rarr;</kbd> for the Gumball Blaster, <kbd>R</kbd> for Road Rage and <kbd>E</kbd> for Sugar Rush.</li>
   </ul>
   <p>Jump over hydrants and other things on the sidewalk, slide under what hangs low, and see how many miles the car takes you.</p>
 
   <h2 id="the-road">The road</h2>
   <ul>
-    <li><strong>Speed:</strong> the car slowly speeds up the farther you go, with busy stretches followed by calmer ones so you can catch your breath.</li>
-    <li><strong>Stop signs</strong> bring the car to a full stop, <strong>school zones</strong> slow it down, and <strong>highway</strong> stretches speed it up. Watch for the road-sign alerts at the top of the screen.</li>
-    <li><strong>The route changes every mile:</strong> the suburbs, farm country, the city, the desert and the mountains, and then around again.</li>
+    <li><strong>Speed:</strong> the car speeds up to 40 mph over the first mile and stays there, apart from short highway speed-ups to 62 mph (never more than 10 seconds), with busy stretches followed by calmer ones so you can catch your breath. After that the road gets busier instead of faster, and new things join each part of the route: bouncing beach balls, runaway skateboards, laundry lines, lawn sprinklers, rolling hay bales, dust devils and giant pinecones, plus these five:
+      <ul>
+        <li>a <strong>flaming grill</strong> in the suburbs, from about mile 0.8: jump it;</li>
+        <li>an <strong>irrigation sprayer</strong> on the farm, from about mile 1.5: slide under its spray;</li>
+        <li>a <strong>runaway tire</strong> rolling at you in the desert, from about mile 2.2: jump it;</li>
+        <li>a <strong>runaway shopping cart</strong> in the city, from about mile 3.3: jump it;</li>
+        <li>a <strong>camera drone</strong> flying at you at pigeon height, in the mountains from about mile 4.3 and in the city from about mile 8.3: slide under it.</li>
+      </ul>
+    </li>
+    <li><strong>Harder the further you go:</strong> the road gets harder fast from the first mile, and from about mile 1.8 it keeps getting harder, with no end: moving-boxes zones come more often, with more stacks, all of them tall; tall box stacks turn up on their own; and tricky combinations and bunches of things get more common. Bandages get rarer from about mile 1 and are all but gone by about mile 2. From about mile 3.6 the zones keep growing, and high walls come more and more often up to about mile 6 (see High walls).</li>
+    <li><strong>Stop signs</strong> bring the car to a full stop, <strong>school zones</strong> slow it down, and <strong>highway</strong> stretches speed it up. From about mile 1.2, highways turn into <strong>rush hour</strong>, and the sidewalk gets much busier. Watch for the road-sign alerts at the top of the screen.</li>
+    <li><strong>High walls</strong> (from about mile 1.2) are too tall for an ordinary jump. One big, <a href="#perfect-jump">perfectly timed jump</a> gets you over them, and Double Jump makes them easy. They&rsquo;re rare at first, about one a mile, and come more and more often the further you go: about two a mile by mile 2, three by mile 3, four by mile 5, and four to five a mile from about mile 6 on (never more than five). The first wall you ever meet falls over harmlessly.</li>
+    <li><strong>Zones:</strong> a blue-and-white sign means a zone is coming: stacks of <strong>moving boxes</strong> (from about mile 1.2; in the city only in the first half of each of its miles), or <strong>wet cement</strong> in the second half of each city mile (from about mile 3.5). Nothing else is on the sidewalk until the zone is over. A big, well-timed jump gets you over each one, and Double Jump makes it easier. Your first zone of each kind doesn&rsquo;t cost a bandage.</li>
+    <li><strong>Tall box stacks</strong> (from about mile 1.6): the last stacks of a moving-boxes zone are taller, with an extra flat box on top that has a white <strong>^^</strong> on it. An ordinary jump never clears them, but one big, <a href="#perfect-jump">perfectly timed jump</a> does. Double Jump makes them easy if you tap again just before the top, and the Gumball Blaster pops them. The alert at the zone&rsquo;s sign says how many there are (&ldquo;4 box stacks, 3 tall&rdquo;), after a tip the first time in a run. From about mile 1.8, every stack in a moving-boxes zone is tall, and tall stacks also turn up on their own, with no sign. The first tall stack you ever meet falls over harmlessly.</li>
+    <li><strong>The route changes every mile:</strong> the suburbs, farm country, the desert, the city and the mountains, and then around again.</li>
+  </ul>
+
+  <h2 id="checkpoints">Checkpoints</h2>
+  <p>Every 2 miles (mile 2, 4, 6, 8 and so on) is a <strong>checkpoint</strong>. The first time you reach one, a white <em>Checkpoint</em> sign shows at the top of the screen, and it is saved for good. From then on you can start your runs there, for free: tap a mile under <strong>Start at mile</strong> on the start screen, or next to <strong>Run again</strong> on the trip report. The game remembers your pick, and <strong>Start</strong>, <strong>Run again</strong> and tapping anywhere all start from it.</p>
+  <ul>
+    <li>Starting at a checkpoint skips the miles before it, and the snacks on them. Mile 0 is the whole trip. A new checkpoint is never picked for you.</li>
+    <li>A run from a checkpoint gets a rolling start: the car speeds up to cruising speed, and the first quarter mile has no high walls, zones or tricky combinations.</li>
+    <li>High walls start at about mile 1.2, so a run from any checkpoint meets them: without Double Jump, each one takes a <a href="#perfect-jump">perfect jump</a>. A warning shows when you pick a checkpoint without Double Jump.</li>
+    <li>Your trip counts to the mile you reach: a run from mile 4 that ends at mile 6.2 is a 6.2-mile trip, and it can be your best trip. Missions count only that run&rsquo;s own miles, and &ldquo;Reach ...&rdquo; missions need you to drive into that place.</li>
+    <li>A continue costs what it costs at that mile of the road (see <a href="#bandages">Bandages and continues</a>), wherever the run started.</li>
+    <li>The picker shows mile 0 and your 3 highest checkpoints. If your last pick is lower than those, it takes the place of the lowest one.</li>
   </ul>
 
   <h2 id="bandages">Bandages and continues</h2>
-  <p>The <strong>bandage</strong> on your finger is an extra life: with it, you can take one hit and keep running. If you lose it, keep an eye out for a new bandage on the road.</p>
-  <p>If you crash without a bandage and have enough snacks, you get a few seconds to <strong>continue</strong> by spending them. The first continue in a run costs 25 snacks, and each extra continue in the same run costs twice as much as the one before.</p>
+  <p>The <strong>bandage</strong> on your finger is an extra life: with it, you can take one hit and keep running. If you lose it, keep an eye out for a new bandage on the road. You carry one bandage at a time, or two with the Bandage Pouch.</p>
+  <ul>
+    <li><strong>Spare Bandage</strong> (a power-up): one extra bandage for one run, on top of the ones you carry. Once it is used, it is gone, and it doesn&rsquo;t come back during that run. Your first 3 runs come with a free one.</li>
+    <li><strong>Bandage Pouch</strong> (an upgrade): start every run with two bandages, and carry up to two all run.</li>
+    <li><strong>First-Aid Kit</strong> (an upgrade with 3 ranks): bandages turn up on the road a bit more often with each rank.</li>
+  </ul>
+  <p>Upgrades are in the <strong>Upgrades</strong> tab of the shop. You buy them once with snacks and keep them for good: they work in every run.</p>
+  <p>If you crash without a bandage and have enough snacks, you get a few seconds to <strong>continue</strong> by spending them. A continue costs 250 snacks during your first mile, 500 during the second mile, 750 during the third, and so on (250 &times; (the mile you are on + 1)). A second continue in the same run costs three times that. You can continue at most twice in a run. With the 8-Bit Digits hand, continues cost half.</p>
+  <p>The continue card can also offer <strong>Watch an ad to keep going</strong>: free, once a run, and a sure continue, not a chance. It doesn&rsquo;t count toward the two snack continues, and it shows even when you don&rsquo;t have enough snacks. The countdown stops while the ad plays. See <a href="#ads">Ads</a>.</p>
 
   <h2 id="snacks">Snacks, missions and levels</h2>
   <ul>
-    <li><strong>Snacks</strong> are the in-game currency. Grab them along the road; they are added to your total at the end of each run.</li>
-    <li>You always have <strong>three missions</strong>, such as &ldquo;Jump 4 fire hydrants in one run&rdquo; or &ldquo;Slide under 5 birds or branches in one run&rdquo;. Each finished mission pays out snacks and is replaced by a new one.</li>
+    <li><strong>Snacks</strong> are the in-game currency. Grab them along the road; they are added to your total at the end of each run. You can also buy snacks in the <a href="#purchases">Snacks tab</a>.</li>
+    <li><strong>Bags of chips:</strong> about once a mile, look out for a gold-glowing bag of chips worth <strong>+25 snacks</strong>, or more with the <a href="#combo">clean-run combo</a>: up to <strong>+50</strong> at x2.0. It sits on the sidewalk in a gap between obstacles, or sometimes over a low obstacle such as a cone or a hedge, where the jump that clears the obstacle grabs it (if a blast pops the obstacle first, the bag drops to the sidewalk). Sugar Rush pulls a bag in but doesn&rsquo;t double it: only the combo makes it worth more. The trip report&rsquo;s double and the Snack Doubler count it like the snacks you pick up.</li>
+    <li><strong>Double your road snacks:</strong> once a run, the trip report can offer a reward ad that gives you the snacks you picked up along the road a second time (see <a href="#ads">Ads</a>). The <strong>Snack Doubler</strong>, a purchase, doubles the snacks you bank from every trip.</li>
+    <li>You always have <strong>three missions</strong>, such as &ldquo;Jump 4 fire hydrants in one run&rdquo; or &ldquo;Slide under 5 birds, branches, gates, laundry, sprayers or drones in one run&rdquo;. Each finished mission pays out snacks and is replaced by a new one.</li>
     <li>Every three missions you finish raises your <strong>level</strong>, and each level gives you a bigger snack bonus on every run.</li>
+    <li>The <a href="#combo">clean-run combo</a> makes the road&rsquo;s snacks worth more the longer you go without a hit, and the <a href="#daily">daily gift</a> gives you snacks each day you play.</li>
   </ul>
 
+  <h2 id="combo">The clean-run combo</h2>
+  <p>The longer you run without getting hit, the more each snack on the road is worth. The combo shows next to your snack counter at the top of the screen, for example <strong>x1.6</strong>.</p>
+  <ul>
+    <li>Every run starts at <strong>x1.0</strong>. Every quarter mile without a hit adds 0.1, up to <strong>x2.0</strong> (two and a half miles without a hit). The number pops each time it goes up.</li>
+    <li>Any hit sets it back to x1.0, even one your bandage takes for you, and the screen flashes &ldquo;combo lost&rdquo;. A continue after a crash also starts it again at x1.0.</li>
+    <li>Road Rage and the Gumball Blaster don&rsquo;t break it: smashing or popping things isn&rsquo;t a hit.</li>
+    <li>It multiplies the snacks and bags of chips you pick up on the road, as you pick them up: at x2.0 a bag of chips is +50. It doesn&rsquo;t change what the Blaster&rsquo;s pops pay, mission rewards or your level bonus.</li>
+  </ul>
+
+  <h2 id="daily">The daily gift</h2>
+  <p>The first time you open the game on a new day, the start screen shows a small card, such as <strong>Day 3 of 7 &middot; +1,000 snacks</strong>. Tap <strong>Claim</strong> and the snacks go straight into your snack total.</p>
+  <table class="tiers">
+    <thead><tr><th scope="col">Day in a row</th><th scope="col">Gift</th></tr></thead>
+    <tbody>
+      <tr><td>Day 1</td><td>500 snacks</td></tr>
+      <tr><td>Day 2</td><td>750 snacks</td></tr>
+      <tr><td>Day 3</td><td>1,000 snacks</td></tr>
+      <tr><td>Day 4</td><td>1,500 snacks</td></tr>
+      <tr><td>Day 5</td><td>2,000 snacks</td></tr>
+      <tr><td>Day 6</td><td>3,000 snacks</td></tr>
+      <tr><td>Day 7</td><td>5,000 snacks</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>Come back the next day for the next day&rsquo;s gift. After day 7, it starts again at day 1.</li>
+    <li>Miss a day and you simply start again at day 1. Nothing else is lost, and there are no timers.</li>
+    <li>A day is a calendar day on your device, from midnight to midnight. Setting the device&rsquo;s clock back doesn&rsquo;t give you another gift.</li>
+    <li>It works offline, and it is saved on your device with the rest of your game.</li>
+  </ul>
+
+  <h2 id="game-center">Game Center</h2>
+  <p>Backseat Runner has <strong>leaderboards</strong> and <strong>achievements</strong> in Game Center, Apple&rsquo;s gaming service. Game Center is optional: the game plays exactly the same without it.</p>
+  <h3>Signing in</h3>
+  <p>The game uses the Game Center account you are signed in to on your device (<strong>Settings &gt; Game Center</strong>). When the game opens and you aren&rsquo;t signed in, Apple may show its own Game Center sign-in. You can sign in there or close it; the game never stops you from playing. To sign in later, or to sign out, use <strong>Settings &gt; Game Center</strong>. Your scores and achievements are sent only while you are signed in, and Game Center needs an internet connection.</p>
+  <h3>Leaderboards</h3>
+  <ul>
+    <li><strong>Best trip:</strong> your longest trip, in miles.</li>
+    <li><strong>Best trip this week:</strong> your longest trip this week. A new week starts every Monday at midnight UTC (Sunday evening in the Americas), and everyone starts again from zero.</li>
+    <li><strong>License plates:</strong> how many of the 50 state plates you have collected.</li>
+  </ul>
+  <p>Inside the game, <strong>Leaderboards</strong> and <strong>Achievements</strong> open Game Center&rsquo;s own screens. You can also find them in Apple&rsquo;s Games app.</p>
+  <h3>Achievements</h3>
+  <table class="tiers">
+    <thead><tr><th scope="col">Achievement</th><th scope="col">How to earn it</th></tr></thead>
+    <tbody>
+      <tr><td>First mile</td><td>Go 1 mile in one trip.</td></tr>
+      <tr><td>Road tripper</td><td>Go 3 miles in one trip.</td></tr>
+      <tr><td>Long haul</td><td>Go 5 miles in one trip.</td></tr>
+      <tr><td>Cross-country</td><td>Go 8 miles in one trip.</td></tr>
+      <tr><td>Clean mile</td><td>Go a whole mile without getting hit.</td></tr>
+      <tr><td>Max combo</td><td>Run without a hit until the <a href="#combo">combo</a> reaches x2.0.</td></tr>
+      <tr><td>Over the wall</td><td>Clear a high wall with a Double Jump (a perfect jump doesn&rsquo;t count).</td></tr>
+      <tr><td>Pop goes the box</td><td>Pop 25 box stacks with the Gumball Blaster (they add up over all your trips).</td></tr>
+      <tr><td>Plate spotter</td><td>Collect 10 different license plates.</td></tr>
+      <tr><td>Plate hunter</td><td>Collect 25 different license plates.</td></tr>
+      <tr><td>All 50 states</td><td>Collect all 50 state license plates.</td></tr>
+      <tr><td>Scenic route</td><td>Reach all five places in one trip: the suburbs, farm country, the desert, the city and the mountains.</td></tr>
+      <tr><td>Snack attack</td><td>Grab 50 bags of chips (they add up over all your trips).</td></tr>
+      <tr><td>Every day</td><td>Claim the <a href="#daily">daily gift</a> 7 days in a row.</td></tr>
+      <tr><td>New wheels</td><td>Buy a car in the shop.</td></tr>
+    </tbody>
+  </table>
+  <p>Each achievement is earned once. Game Center shows its own banner when you earn one.</p>
+  <p>Game Center is run by Apple. The game sends Apple your scores and achievements, and nothing about it comes to me; see the <a href="privacy.html#game-center">Privacy Policy</a>.</p>
+
   <h2 id="shop">The shop</h2>
-  <p>Spend your snacks in the shop on <strong>25 hand styles</strong>, <strong>sleeves</strong>, <strong>cars</strong> and <strong>power-ups</strong>. Everything in the shop is bought with snacks you earn by playing. There are no real-money purchases and no ads.</p>
+  <p>Spend your snacks in the shop on <strong>25 hand styles</strong>, <strong>15 sleeves</strong> (from a striped tee to a superhero suit), <strong>15 cars</strong> (from the family sedan to a golden parade float), <strong>power-ups</strong> and <strong>upgrades</strong>. All of these are bought with snacks, which you earn by playing. The shop&rsquo;s <strong>Snacks</strong> tab is the only place that sells anything for real money: see <a href="#purchases">Purchases</a>.</p>
+  <ul>
+    <li><strong>Power-ups</strong> are used up: each one works once, or for one run.</li>
+    <li><strong>Upgrades</strong> work in every run. Each card shows what the upgrade does, how many of its ranks you own, and the price of the next rank (or <em>Maxed</em> / <em>Owned</em> when you have them all). Buying takes two taps: the first asks, the second buys. The trip report&rsquo;s <strong>Next step</strong> line shows the next upgrade you can buy, or how many snacks you still need for one; tap it to go straight to that upgrade in the shop. If you swipe to slide and something overhead hit you on that trip, it suggests the Slide button instead, and its <strong>Settings</strong> button opens <a href="#settings">Settings</a>. See <a href="#bandages">Bandages and continues</a> for what the bandage upgrades do.</li>
+    <li><strong>Double Jump</strong> (an upgrade): tap again in the air, just before the top of your jump, to jump higher. It makes high walls and tall box stacks easy (without it, each takes a <a href="#perfect-jump">perfect jump</a>), and it makes wet cement and boxes easier. You can buy it once you&rsquo;ve reached wet cement, moving boxes or a high wall.</li>
+    <li><strong>Gumball Blaster</strong> (an upgrade with 4 ranks): tap <strong>Blaster</strong> during a run for 8 seconds of popping almost anything in your way (not walls, wet cement or branches; pigeons get shooed). Rank I holds 2 blasts and each rank holds one more (up to 5). They are full at the start of every run, one comes back every 3 miles, and one at each <em>Moving day</em> sign until mile 1.5. Rank I unlocks once a tall stack has reached you and you own Double Jump; ranks II, III and IV need a best trip of 2, 3.5 and 5 miles.</li>
+  </ul>
 
   <h2 id="power-ups">Power-ups</h2>
   <ul class="powers">
     <li><b>Road Rage</b>The car floors it to 100 mph for 10 seconds and you smash straight through obstacles.<small>Tap its button during a run. One per run.</small></li>
     <li><b>Sugar Rush</b>For 15 seconds, snacks and plates fly to you, and every snack counts double.<small>Tap its button during a run.</small></li>
-    <li><b>Spare Bandage</b>Start a run with two bandages, and carry up to two for the whole run.<small>Used automatically when your next run starts.</small></li>
-    <li><b>Plate Radar</b>For one run, rare plates start showing up twice as early and three times as often.<small>Used automatically when your next run starts.</small></li>
+    <li><b>Spare Bandage</b>One extra bandage for one run, on top of the ones you carry. Once it is used, it is gone.<small>Used automatically when your next run starts. Your first 3 runs come with a free one.</small></li>
+    <li><b>Plate Radar</b>For one run, rarer plates start showing up sooner, and rare ones three times as often.<small>Used automatically when your next run starts.</small></li>
   </ul>
   <p>Spare Bandage and Plate Radar can be switched on or off before a run with the <strong>Next run</strong> buttons on the start screen, so you can save them for later.</p>
 
   <h2 id="plates">License plates</h2>
   <p>Plates from all 50 U.S. states float along the road, often above obstacles or under branches. Collect each state once to fill your collection; tap <strong>Plates</strong> to see which ones you have.</p>
-  <p>Most states are common, but rarer plates only start turning up deeper into a run, and the farther you go the better your chances. Alaska and Hawaii are legendary: they only appear after many miles in a single run, and even then they are a long shot.</p>
+  <p>Most states are common, but rarer plates only start turning up a little way into a run, and the farther you go the better your chances. Alaska and Hawaii are legendary: they only start to appear from about mile 1.4, get likelier the further you go, and even then they are a long shot.</p>
   <details>
     <summary>Spoiler: which plates are rare?</summary>
     <table class="tiers">
       <thead><tr><th scope="col">Rarity</th><th scope="col">States</th><th scope="col">Starts appearing</th></tr></thead>
       <tbody>
         <tr><td>Uncommon</td><td>Idaho, Maine, Nebraska, New Hampshire, New Mexico, West Virginia</td><td>after about half a mile</td></tr>
-        <tr><td>Rare</td><td>Delaware, Montana, Rhode Island, South Dakota</td><td>after about 1.5 miles</td></tr>
-        <tr><td>Very rare</td><td>North Dakota, Vermont, Wyoming</td><td>after about 3 miles</td></tr>
-        <tr><td>Legendary</td><td>Alaska, Hawaii</td><td>after about 5 miles</td></tr>
+        <tr><td>Rare</td><td>Delaware, Montana, Rhode Island, South Dakota</td><td>after about 0.7 miles</td></tr>
+        <tr><td>Very rare</td><td>North Dakota, Vermont, Wyoming</td><td>after about 1 mile</td></tr>
+        <tr><td>Legendary</td><td>Alaska, Hawaii</td><td>after about 1.4 miles</td></tr>
       </tbody>
     </table>
-    <p>All other states are common and can show up at any time. Plate Radar halves these distances for one run.</p>
+    <p>All other states are common and can show up at any time. With Plate Radar the rarer ones start sooner, for one run: uncommon after about a quarter mile, rare after about 0.55 miles, very rare after about 0.7 and legendary after about 0.9.</p>
   </details>
+
+
+  <h2 id="ads">Ads</h2>
+  <p>Backseat Runner is free to play, paid for by ads and by optional purchases. All ads come from Google AdMob and are rated G at most. There are no banner ads and no ads when the app opens.</p>
+
+  <h3>Reward ads: always your choice</h3>
+  <ul>
+    <li><strong>Watch an ad to keep going:</strong> after a crash with no bandage left, the continue card can show this button. Watch the ad to the end and you get back up. It&rsquo;s once a run, it doesn&rsquo;t use up your two snack continues, and it shows even when you don&rsquo;t have enough snacks for a continue.</li>
+    <li><strong>Watch an ad to double your road snacks:</strong> on the trip report, under the snacks you earned, once a run. It gives you the snacks you picked up along the road that trip a second time, and the button shows how many (for example <em>+1,200</em>). Blaster pop pay and mission rewards aren&rsquo;t doubled. It doesn&rsquo;t show when the trip picked up no snacks.</li>
+    <li>The reward comes when the ad finishes. An ad closed early gives no reward.</li>
+    <li>These buttons only show when an ad is ready. If one can&rsquo;t play, you see &ldquo;No ad right now. Try again in a bit.&rdquo; and the card comes back as it was.</li>
+  </ul>
+
+  <h3>The between-run ad</h3>
+  <p>Sometimes a full-screen ad plays when you tap <strong>Run again</strong> on the trip report, before the next run starts. It is kept rare:</p>
+  <ul>
+    <li>none in the first 24 hours after you first open the game;</li>
+    <li>at most once every 3 runs, and runs shorter than 30 seconds don&rsquo;t count;</li>
+    <li>at least 3 minutes after any other full-screen ad;</li>
+    <li>never after a run where you watched a reward ad, and never within 2 minutes of one;</li>
+    <li>none for 24 hours after any purchase;</li>
+    <li>never during a run, when the app opens or when you come back to it;</li>
+    <li>never with <strong>Remove Ads</strong>.</li>
+  </ul>
+  <p>Close the ad with its close button and the run starts. If no ad is ready, or one doesn&rsquo;t load quickly, the run just starts. After any full-screen ad, taps are ignored for a second, so a stray tap doesn&rsquo;t start a run or make you jump.</p>
+
+  <h3>Remove Ads</h3>
+  <p><strong>Remove Ads</strong> is bought once, in the Snacks tab. It turns the between-run ad off for good, and it comes back with <strong>Restore purchases</strong> on a new device or after reinstalling. The reward ads stay as optional buttons, so you can still watch one to keep going or to double your road snacks.</p>
+
+  <h3>Ads need a connection</h3>
+  <p>Ads need an internet connection. Offline, there are no ads and no ad buttons, and the game plays just the same.</p>
+
+  <h2 id="purchases">Purchases (the Snacks tab)</h2>
+  <p>The shop&rsquo;s <strong>Snacks</strong> tab sells a few things for real money, through Apple. Each one shows Apple&rsquo;s price in your currency, and Apple asks you to confirm before anything is charged. Purchases need an internet connection. Nothing you can buy skips a skill step: the Blaster ranks still need a best trip, and Double Jump still needs you to have reached a wall, wet cement or boxes.</p>
+  <ul class="powers">
+    <li><b>Starter Pack</b>The Road Trip tee sleeve (only in this pack), 2 Spare Bandages, 2 Sugar Rush and a bonus of snacks. It&rsquo;s offered once on the start screen after your 3rd run, and it stays in the Snacks tab until you own it.<small>Bought once. No timer.</small></li>
+    <li><b>Remove Ads</b>No more between-run ads. Reward ads stay, as optional buttons.<small>Bought once.</small></li>
+    <li><b>Snack Doubler</b>Doubles the snacks you bank at the end of every trip. With a hand that doubles snacks, the two add up to three times, not four.<small>Bought once.</small></li>
+    <li><b>Snack packs</b>The Snack Bag, Snack Box, Snack Cooler and Snack Truck, from smallest to biggest. Each card shows how many snacks it holds. Bought snacks go straight into your snack total and never expire.<small>Buy as often as you like.</small></li>
+  </ul>
+  <ul>
+    <li>While a purchase is going through, every buy button is turned off, so nothing gets bought twice.</li>
+    <li><strong>Waiting for approval:</strong> if Ask to Buy is on for your Apple Account (common for children in Family Sharing), the card shows &ldquo;Waiting for approval&rdquo; while a parent decides. Nothing is charged unless they approve. Once approved, the item arrives on its own (if the game is closed, the next time you open it). A request nobody answers expires after 24 hours.</li>
+    <li><strong>Restore purchases</strong> (in the Snacks tab and in Settings) brings back Remove Ads, the Snack Doubler and the Starter Pack on a new device or after reinstalling, with the same Apple Account. They usually come back on their own; tap Restore purchases if they don&rsquo;t. Apple may ask you to sign in. On a fresh game, a restored Starter Pack gives its sleeve, power-ups and snacks again.</li>
+    <li><strong>Bought snacks live on this device.</strong> Snacks from packs become part of your saved game, just like the snacks you earn. They can&rsquo;t be restored: if you delete the app, they are deleted with the rest of your progress. A new device set up from a backup of the old one keeps them.</li>
+    <li><strong>Family Sharing:</strong> purchases aren&rsquo;t shared with family members.</li>
+    <li><strong>Refunds</strong> are handled by Apple, not by me: go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or contact Apple Support. If Apple refunds Remove Ads, the Snack Doubler or the Starter Pack, that item switches off in the game. Snacks already added to your snack total stay, including those from a refunded snack pack, and so does anything a Starter Pack already gave you.</li>
+    <li><strong>Turning purchases off:</strong> in <strong>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions</strong>, set In-app Purchases to Don&rsquo;t Allow. The game then hides its real-money items.</li>
+  </ul>
+
+  <h2 id="age">The age question and privacy</h2>
+  <p>The first time you open the game, it asks <strong>What year were you born?</strong> Pick the year on the wheel and tap <strong>Continue</strong>.</p>
+  <ul>
+    <li>It&rsquo;s asked only once. Only an age range (under 13, 13 to 17, or 18 and over) is kept, on your device. The year itself isn&rsquo;t stored.</li>
+    <li>Nobody is blocked, and the answer changes nothing in the game itself: only how the ads work. Under 18, the game never shows the tracking prompt and never asks to personalize ads. Under 13, ads are contextual only.</li>
+    <li>To answer again (for example, if someone else answered on your device), delete and reinstall the app. That also deletes your saved game, including bought snacks.</li>
+    <li><strong>Adults:</strong> after your 3rd completed trip, on its trip report, a short note appears, then iOS asks once whether the app may track you (never when the app opens, and not again if Google&rsquo;s consent screen already brought up that question). Your answer changes nothing in the game, and you can change it in <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+  </ul>
+  <h3 id="privacy-choices">Privacy choices</h3>
+  <p>Where privacy laws require it (for adults in the European Economic Area, the UK and Switzerland, and in some U.S. states), the game&rsquo;s Settings shows <strong>Privacy choices</strong>. It opens Google&rsquo;s form, where you can change or withdraw your consent for ads at any time.</p>
+  <h3 id="report-ad">Report an ad</h3>
+  <p>Saw an ad that seemed inappropriate, or not right for the game&rsquo;s age rating? In the game&rsquo;s Settings, tap <strong>Report an ad</strong>. It opens an email to <a href="mailto:backseatrunner@gmail.com?subject=Report%20an%20ad">backseatrunner@gmail.com</a>. Say what the ad showed, who the advertiser was and roughly when you saw it (a screenshot helps), and I can block it in AdMob.</p>
+  <p>The <a href="privacy.html">Privacy Policy</a> has the details: what Google&rsquo;s ad code collects, how each age group is treated, and how long anything is kept.</p>
 
   <section class="faq">
     <h2 id="faq">Frequently asked questions</h2>
 
     <h3>Is my progress saved?</h3>
-    <p>Yes. Your snacks, level, missions, shop items, power-ups, plates and best distance are saved automatically on your device as you play, and they are kept when you update the app.</p>
+    <p>Yes. Your snacks (including any you bought), level, missions, shop items, power-ups, checkpoints, plates and best distance are saved automatically on your device as you play, and they are kept when you update the app.</p>
 
     <h3>Can I move my progress to another iPhone or iPad?</h3>
-    <p>There are no accounts and no online sync, so progress does not move between devices on its own. If you set up a new device from an iCloud or computer backup of your old one, your progress normally comes along with the backup.</p>
+    <p>The game has no accounts of its own and no online sync, so progress does not move between devices on its own. (Your Game Center scores and achievements stay with your Game Center account, but your snacks, shop items and plates don&rsquo;t come with them.) If you set up a new device from an iCloud or computer backup of your old one, your progress normally comes along with the backup. Remove Ads, the Snack Doubler and the Starter Pack follow your Apple Account: on another device, they come back with <strong>Restore purchases</strong>. Snacks, bought ones included, only move with a backup.</p>
 
-    <h3>How do I reset my progress and start over?</h3>
-    <p>There is no reset button in the game, so a fresh start is never one accidental tap away. To start over:</p>
-    <ol>
-      <li>Touch and hold the Backseat Runner icon, tap <strong>Remove App</strong>, then <strong>Delete App</strong>.</li>
-      <li>Reinstall Backseat Runner from the App Store.</li>
-    </ol>
-    <p>This permanently erases all of your progress, including snacks, items and plates. Nothing is stored online, so it cannot be recovered afterwards. (&ldquo;Offload App&rdquo; does not reset anything: it keeps your game data.)</p>
+    <h3>How do I start over?</h3>
+    <p>To erase everything and start fresh, delete the app (touch and hold its icon, tap <strong>Remove App</strong>, then <strong>Delete App</strong>) and reinstall it from the App Store. (&ldquo;Offload App&rdquo; does not reset anything: it keeps your game data.) This also deletes any snacks you bought, and they can&rsquo;t be restored. Remove Ads, the Snack Doubler and the Starter Pack come back with <strong>Restore purchases</strong>. You will be asked the age question again.</p>
 
     <h3>I lost my progress. Can you restore it?</h3>
-    <p>Sorry, no. Your progress exists only on your device, and I never receive a copy. If you had a device backup from before the progress was lost, restoring that backup may bring it back.</p>
+    <p>Sorry, no. Your progress exists only on your device, and I never receive a copy. If you had a device backup from before the progress was lost, restoring that backup may bring it back. Items you bought once (Remove Ads, the Snack Doubler and the Starter Pack) always come back with <strong>Restore purchases</strong>.</p>
+
+    <h3>What is the x1.6 next to my snacks?</h3>
+    <p>That is the <a href="#combo">clean-run combo</a>: every snack you pick up on the road is worth that many times more. Keep running without a hit to take it up to x2.0.</p>
+
+    <h3>I missed a day. Did I lose anything?</h3>
+    <p>No. The <a href="#daily">daily gift</a> just starts again at day 1. Everything you have stays.</p>
+
+    <h3>Do I need Game Center?</h3>
+    <p>No. Without it you get the same game, the same snacks and the same daily gift; only the leaderboards and achievements need it. See <a href="#game-center">Game Center</a>.</p>
+
+    <h3>An achievement or score didn&rsquo;t show up in Game Center.</h3>
+    <p>Check that you are signed in to Game Center (<strong>Settings &gt; Game Center</strong>) and online. Scores and achievements are only sent while you are signed in. New scores can take a little while to show on the leaderboards.</p>
 
     <h3>I can&rsquo;t find Alaska or Hawaii. Are they really in the game?</h3>
-    <p>Yes. They are the rarest plates and only appear far into a single run. Your best chances: go as far as you can without crashing, use <strong>Plate Radar</strong> so rare plates turn up earlier and more often, keep <strong>Spare Bandages</strong> handy to survive longer, and use <strong>Sugar Rush</strong> to pull in plates that are hard to reach.</p>
+    <p>Yes. They are the rarest plates and only appear from about mile 1.4, more often the further you go. Your best chances: go as far as you can without crashing, use <strong>Plate Radar</strong> so rare plates turn up earlier and more often, keep <strong>Spare Bandages</strong> handy to survive longer, and use <strong>Sugar Rush</strong> to pull in plates that are hard to reach.</p>
+
+    <h3>How do I get past high walls, wet cement and boxes?</h3>
+    <p>High walls and tall box stacks (the ones with a white ^^ on top) take one big, perfectly timed jump: take off a little before one reaches you and keep your finger down until you&rsquo;re over. Follow the candy over it: jump just as its first piece reaches your hand. See <a href="#perfect-jump">Perfect jump</a>. Double Jump makes walls and tall stacks easy: tap again in the air, just before the top of your jump. A blast from the Gumball Blaster pops tall stacks. For wet cement and boxes, hold for your highest jump (for wet cement, take off right at its edge), or use a Double Jump to make them easier. A blast pops the other boxes too, but never walls or wet cement. See <a href="#the-road">The road</a>.</p>
+
+    <h3>Does the perfect jump still work after I buy Double Jump?</h3>
+    <p>Yes. One big jump timed perfectly still springs you over high walls and tall stacks, with or without Double Jump. Double Jump is the easier way: tap again in the air, just before the top of your jump. Once you own it, the candy over walls and tall stacks shows the double jump. You can tap again after a perfect takeoff too: it becomes a double jump, just as after any jump.</p>
+
+    <h3>Swiping down is hard for me.</h3>
+    <p>Turn on <strong>Slide button</strong> in Settings (the gear at the top of the start screen, or the switch on the pause screen): a Slide button appears in the bottom-left corner, and swiping is switched off. With VoiceOver or Switch Control running, the Slide button is on to begin with. On a keyboard, <kbd>&darr;</kbd> or <kbd>S</kbd> slides too.</p>
+
+    <h3>Can I skip the easy start of the road?</h3>
+    <p>Yes, once you have reached mile 2. Every 2 miles you reach becomes a place you can start from: see <a href="#checkpoints">Checkpoints</a>.</p>
 
     <h3>How do power-ups work?</h3>
     <p>Buy them in the shop with snacks. Road Rage and Sugar Rush appear as buttons during a run; tap one to use it. Spare Bandage and Plate Radar are used automatically at the start of your next run, unless you switch them off with the <strong>Next run</strong> buttons on the start screen. See <a href="#power-ups">Power-ups</a> above.</p>
 
     <h3>Do I need an internet connection?</h3>
-    <p>No. The game runs completely offline, so it is perfect for the car, a plane or anywhere without signal.</p>
+    <p>Not to play. The game runs completely offline, so it is perfect for the car, a plane or anywhere without signal. Ads and purchases need a connection: offline, you just won&rsquo;t see any ads or be able to buy anything.</p>
 
     <h3>Are there in-app purchases or ads?</h3>
-    <p>No. Snacks are earned only by playing and cannot be bought with real money, and there are no ads.</p>
+    <p>Yes. Reward ads are always your choice. A full-screen ad can play between some runs, never in your first 24 hours, and Remove Ads turns it off. The Snacks tab sells snack packs, Remove Ads, the Snack Doubler and a Starter Pack for real money. See <a href="#ads">Ads</a> and <a href="#purchases">Purchases</a>.</p>
+
+    <h3>I bought something but didn&rsquo;t get it.</h3>
+    <p>Check that you&rsquo;re online, then close the game fully and open it again: a purchase that didn&rsquo;t finish is delivered the next time the game opens, and it is never counted twice. For Remove Ads, the Snack Doubler or the Starter Pack, tap <strong>Restore purchases</strong>. If the card says &ldquo;Waiting for approval&rdquo;, a parent still needs to approve it. If it still hasn&rsquo;t arrived, ask Apple for a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, or email me.</p>
+
+    <h3>My child bought something by mistake.</h3>
+    <p>Refunds are handled by Apple: request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. To approve purchases first, turn on Ask to Buy in Family Sharing; to block them, set In-app Purchases to Don&rsquo;t Allow in Screen Time (see <a href="#purchases">Purchases</a>).</p>
+
+    <h3>I saw an inappropriate ad.</h3>
+    <p>Sorry about that. Tap <strong>Report an ad</strong> in the game&rsquo;s Settings and tell me what it showed, so I can block it (see <a href="#report-ad">Report an ad</a>).</p>
 
     <h3>Does the app collect any data?</h3>
-    <p>No. There are no accounts, analytics or tracking, and the app never connects to the internet. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+    <p>The game itself sends nothing about you to me, and it has no accounts of its own. If you are signed in to Game Center, your scores and achievements go to Apple&rsquo;s Game Center. The ads come from Google AdMob, whose code collects some device and usage data to show ads, limit how often they appear and prevent fraud; for players under 13, it is used only for that. Purchases go through Apple, and I never see payment details. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
 
     <h3>I can&rsquo;t hear any sound.</h3>
     <p>Check that the speaker button in the game is not muted, that the volume is up, and that your device&rsquo;s silent mode is off: game sounds follow the silent switch. Game sounds play alongside your own music instead of stopping it.</p>

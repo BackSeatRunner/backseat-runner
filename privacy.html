@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Backseat Runner Privacy Policy</title>
-<meta name="description" content="Privacy policy for Backseat Runner, an offline endless runner for iPhone and iPad. The app collects no data.">
+<meta name="description" content="Privacy policy for Backseat Runner, an endless runner for iPhone and iPad: the ads from Google AdMob and what their code collects, how each age group is treated, purchases through Apple, Apple's Game Center, data retention and your choices.">
 <style>
 :root{
   --bg:#faf6f0; --card:#ffffff; --text:#2a2320; --muted:#655a52; --border:#e4dacd;
@@ -37,12 +37,21 @@ h3{font-size:17px;margin:20px 0 4px}
 p,ul{margin:0 0 14px}
 ul{padding-left:22px}
 li{margin:4px 0}
-a{color:var(--accent);text-underline-offset:2px}
+a{color:var(--accent);text-underline-offset:2px;overflow-wrap:anywhere}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
 .summary{background:var(--good-soft);border:1px solid var(--border);border-left:5px solid var(--good);border-radius:10px;padding:16px 18px;margin:0 0 8px}
 .summary p{margin:0 0 8px}
 .summary ul{margin:0}
 .summary strong{color:var(--good)}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 18px;margin:20px 0 8px}
+.toc p{margin:0 0 4px;font-weight:700;font-size:15px}
+.toc ul{margin:0;padding-left:20px;columns:2;column-gap:28px}
+.toc li{margin:2px 0;break-inside:avoid}
+.ages{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:15px;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.ages th,.ages td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.ages tr:last-child td,.ages tr:last-child th{border-bottom:0}
+.ages thead th{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ages tbody th{font-weight:700;white-space:nowrap}
 .contact{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
 .contact p{margin:0 0 6px}
 .contact p:last-child{margin:0}
@@ -53,9 +62,13 @@ footer p{margin:0 0 4px}
   body{font-size:16px}
   h1{font-size:26px}
   h2{font-size:19px}
+  .toc ul{columns:1}
+  .ages{font-size:14px}
+  .ages th,.ages td{padding:7px 9px}
+  .ages tbody th{white-space:normal}
 }
 @media print{
-  header nav,footer{display:none}
+  header nav,footer,.toc{display:none}
   body{background:#fff;color:#000}
 }
 </style>
@@ -73,72 +86,190 @@ footer p{margin:0 0 4px}
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="date">Effective and last updated: October 11, 2026</p>
+  <p class="date">Effective and last updated: October 23, 2026</p>
 
   <div class="summary" role="note" aria-label="Summary">
-    <p><strong>The short version:</strong> Backseat Runner does not collect any information about you.</p>
+    <p><strong>The short version:</strong></p>
     <ul>
-      <li>No accounts or sign-in</li>
-      <li>No analytics, ads or tracking</li>
-      <li>No third-party services or SDKs</li>
-      <li>No internet connection used: the game runs fully offline</li>
-      <li>Your game progress is saved only on your own device</li>
+      <li>The game has no accounts of its own, and it plays offline.</li>
+      <li>The app shows ads from <strong>Google AdMob</strong>. Google&rsquo;s ad code collects some device and usage data (<a href="#google">listed below</a>) to show ads, limit how often they appear and prevent fraud.</li>
+      <li>The first time you open the game, it asks for your birth year, once. Only an age range is kept, on your device. The year itself is never stored or sent anywhere.</li>
+      <li>Under 18: the app never shows Apple&rsquo;s tracking prompt and never asks to personalize ads. Under 13: Google&rsquo;s child-directed ad treatment, so ads are contextual only.</li>
+      <li>Adults decide whether to allow tracking. The game is exactly the same either way.</li>
+      <li>Purchases are handled by Apple. I never see your payment details.</li>
+      <li><strong>Game Center</strong> is Apple&rsquo;s service and optional. If you are signed in to it on your device, the game sends Apple your leaderboard scores and achievements (<a href="#game-center">details below</a>). None of it comes to me.</li>
+      <li>Your game progress is saved only on your device, and the app sends me no information about you.</li>
     </ul>
   </div>
 
-  <h2 id="scope">Who this policy covers</h2>
-  <p>This policy covers the Backseat Runner app for iPhone and iPad, made by Omayya Harvey Atout, an individual developer (&ldquo;I&rdquo;, &ldquo;me&rdquo;). It explains what happens to information when you use the app.</p>
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#scope">Who this policy covers</a></li>
+      <li><a href="#on-device">Stored on your device</a></li>
+      <li><a href="#ads">Ads in the app</a></li>
+      <li><a href="#google">What Google&rsquo;s ad code collects</a></li>
+      <li><a href="#ages">How each age group is treated</a></li>
+      <li><a href="#tracking">Tracking (adults only)</a></li>
+      <li><a href="#children">Children&rsquo;s privacy</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#game-center">Game Center</a></li>
+      <li><a href="#report">Reporting an ad</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#third-parties">Third parties</a></li>
+      <li><a href="#delete">Deleting your data</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h2 id="collection">Information the app collects</h2>
-  <p><strong>None.</strong> Backseat Runner does not collect, send, share or sell any personal information or usage data. In particular, the app:</p>
-  <ul>
-    <li>has no accounts, sign-in, chat or social features;</li>
-    <li>contains no analytics, crash-reporting, advertising or tracking code, and no third-party SDKs;</li>
-    <li>makes no network requests: the whole game is bundled inside the app and works in airplane mode;</li>
-    <li>does not ask for access to your location, contacts, photos, camera, microphone or any other permission;</li>
-    <li>does not use the advertising identifier and does not track you across other apps or websites.</li>
-  </ul>
+  <h2 id="scope">Who this policy covers</h2>
+  <p>This policy covers the Backseat Runner app for iPhone and iPad, made by Omayya Harvey Atout, an individual developer (&ldquo;I&rdquo;, &ldquo;me&rdquo;). It explains what information the app keeps, what the advertising code inside it collects, and the choices you have.</p>
+  <p>The app has no accounts of its own and no chat. Its only social feature is Apple&rsquo;s Game Center (leaderboards and achievements), which you use with your own Game Center profile if you are signed in to it on your device (see <a href="#game-center">Game Center</a>). It does not ask for your name, email address, phone number, contacts, photos, camera, microphone or precise location. The app&rsquo;s own code has no analytics or crash reporting. Besides Apple&rsquo;s own frameworks (such as In-App Purchase and Game Center), the only code in it from anyone else is Google&rsquo;s ad code (the Google Mobile Ads SDK and Google&rsquo;s consent tool).</p>
 
   <h2 id="on-device">Information stored on your device</h2>
-  <p>To remember your progress between sessions, the app saves a small amount of game data in its own private storage on your device (iOS app storage, also known as UserDefaults). This includes:</p>
+  <p>To remember your game between sessions, the app saves a small amount of data in its own private storage on your device (iOS app storage, also known as UserDefaults):</p>
   <ul>
-    <li>your snack balance, level and current missions;</li>
-    <li>the hands, sleeves, cars and power-ups you own or have equipped;</li>
-    <li>the license plates you have collected and your best distance;</li>
-    <li>whether game sound is muted.</li>
+    <li>your game progress: snacks (including any you bought), level, missions, the hands, sleeves, cars, power-ups and upgrades you own, plates, checkpoints and best distance;</li>
+    <li>your settings, such as sound and the Slide button;</li>
+    <li>the <strong>daily gift</strong>: the last day you claimed it and how many days in a row (and your best run of days), so the game knows which day&rsquo;s gift comes next;</li>
+    <li>for Game Center, a list of which achievements the game has already sent, so it never sends one twice, and two all-time play counts that two achievements need (how many box stacks you have popped and how many bags of chips you have grabbed, over all your trips). They are kept whether or not you are signed in, and they stay on your device;</li>
+    <li>your <strong>age range</strong> (under 13, 13 to 17, or 18 and over). The birth year you pick is used once to work out the range and is then thrown away;</li>
+    <li>a record of your purchases: Apple&rsquo;s transaction ID for each purchase already delivered (so nothing is credited twice), and which bought-once items you own;</li>
+    <li>ad timing: when you first opened the game, how many runs since the last full-screen ad, when the last ad and the last purchase happened, and whether the tracking notice has been shown. The game uses these only to keep ads within the limits described on the <a href="support.html#ads">support page</a>.</li>
   </ul>
-  <p>This data never leaves your device through the app, and I have no way to see it. It does not include your name or anything else that identifies you.</p>
-  <p>If you back up your device with iCloud Backup or to a computer, iOS may include this game data in those backups, as it does for most apps. Backups are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>; I do not have access to them.</p>
+  <p>The app does not send this data to me, and I have no way to see it. If you back up your device with iCloud Backup or to a computer, iOS may include this data in those backups. Backups are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</p>
 
-  <h2 id="purchases">Purchases and advertising</h2>
-  <p>There are no in-app purchases and no ads. Snacks are an in-game currency that you earn only by playing, and they cannot be bought with real money.</p>
+  <h2 id="ads">Ads in the app</h2>
+  <p>Backseat Runner is free and is paid for by ads and optional purchases. All ads come from <strong>Google AdMob</strong>, run by Google LLC. No other ad network is used. There are two kinds of ads:</p>
+  <ul>
+    <li><strong>Reward ads</strong> that you choose to watch: &ldquo;Watch an ad to keep going&rdquo; after a crash, and &ldquo;Watch an ad to double your road snacks&rdquo; on the trip report.</li>
+    <li>An occasional <strong>full-screen ad between runs</strong>, when you tap Run again. There are none in your first 24 hours, and never during a run. Remove Ads turns these off.</li>
+  </ul>
+  <p>There are no banner ads and no ads when the app opens. All ads in the app are limited to Google&rsquo;s G rating (suitable for general audiences), for everyone, and sensitive ad categories are blocked. Ads need an internet connection; without one, no ads are shown and the game plays as usual.</p>
 
-  <h2 id="third-parties">Third parties</h2>
-  <p>The app does not share any information with third parties, because it does not collect any.</p>
-  <p>The app is distributed through Apple&rsquo;s App Store. Apple may give developers general, anonymous App Store statistics (such as download counts), and crash reports only if you have chosen to share analytics with app developers in your device&rsquo;s settings. None of this identifies you to me, and it is governed by Apple&rsquo;s Privacy Policy.</p>
+  <h2 id="google">What Google&rsquo;s ad code collects</h2>
+  <p>According to the privacy information Google ships inside its ad code (the Google Mobile Ads SDK) and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google&rsquo;s data disclosure for the Google Mobile Ads SDK</a>, its code may collect:</p>
+  <ul>
+    <li><strong>IP address</strong>, which may be used to estimate the general location of the device (for example, the country or city, never the precise location);</li>
+    <li><strong>crash logs</strong> that are not linked to the user, used to find and fix problems in the ad code;</li>
+    <li><strong>performance data</strong>, such as app launch time, hang rate and energy use;</li>
+    <li><strong>other diagnostic data</strong>: other technical information about how the ad code is running, not linked to the user;</li>
+    <li>a <strong>device identifier</strong>: Apple&rsquo;s advertising identifier only for adults who allow tracking, and otherwise an identifier limited to this app or this developer;</li>
+    <li><strong>advertising data</strong>, such as which ads have been shown;</li>
+    <li><strong>product interactions</strong>, such as app launch taps, and interaction information such as video views.</li>
+  </ul>
+  <p>Google&rsquo;s consent tool, which shows Google&rsquo;s consent form where the law requires one, also uses the general location (from the IP address), performance data and product interactions, only to work out whether a form is needed and to make it work. Its privacy information marks these as not linked to the user and not used for tracking.</p>
+  <p>The app also tells Google&rsquo;s ad code which age treatment to use (child, teen or none, from your age range) and passes on any consent choices you made. It never passes your birth year.</p>
+  <p>Google uses this data to show ads, to measure and limit them (frequency capping), to detect fraud and keep the ads secure, and to fix its code. In the terms of Apple&rsquo;s App Store privacy labels, Google declares these uses as third-party advertising, developer&rsquo;s advertising or marketing, and analytics (crash logs: analytics only). For adults who allow tracking, and where required give consent, Google may also use it to show personalized ads. Google handles this data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>; <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> explains more.</p>
+  <p>I don&rsquo;t receive this data. AdMob gives me only totals, such as how many ads were shown and earned, by country and by ad unit, which do not identify anyone.</p>
+
+  <h2 id="ages">How each age group is treated</h2>
+  <p>The first time you open the game, before any ad code starts, it asks: &ldquo;What year were you born?&rdquo; It asks only once. Nobody is blocked from playing, and the answer changes nothing in the game itself: only how the ads work.</p>
+  <table class="ages">
+    <thead><tr><th scope="col">Age group</th><th scope="col">How ads work</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Under 13</th><td>The app turns on Google&rsquo;s <strong>child-directed treatment</strong> for every ad request. Ads are contextual only: no interest-based or personalized ads and no remarketing. No consent form is shown and Apple&rsquo;s tracking prompt is never shown, so Apple&rsquo;s advertising identifier is not available. See <a href="#children">Children&rsquo;s privacy</a>.</td></tr>
+      <tr><th scope="row">13 to 17</th><td>The app turns on Google&rsquo;s <strong>teen treatment</strong> and marks the player as under the age of consent. No consent form is shown, Apple&rsquo;s tracking prompt is never shown, and the app never asks to personalize ads.</td></tr>
+      <tr><th scope="row">18 and over</th><td>Standard ad treatment. Where the law requires it (the European Economic Area, the UK and Switzerland), Google&rsquo;s consent form asks before ads are personalized. After your 3rd completed trip, on its trip report, the game may ask once whether to allow tracking (see <a href="#tracking">Tracking</a>).</td></tr>
+    </tbody>
+  </table>
+  <p>Every age group gets ads rated G at most. Only the age range is stored, on the device. If the wrong person answered (for example, a child playing on a parent&rsquo;s phone), delete and reinstall the app to be asked again. Deleting the app also deletes the saved game, as explained <a href="#delete">below</a>.</p>
+
+  <h2 id="tracking">Tracking (adults only)</h2>
+  <p>Only players who said they are 18 or over can see Apple&rsquo;s tracking prompt, and only once: after their 3rd completed trip, on that trip&rsquo;s trip report, never when the app opens. Players under 18 never see it. First a short note explains it: &ldquo;Ads help keep Backseat Runner free. Next, iOS will ask about tracking.&rdquo; Then iOS asks. If Google&rsquo;s consent screen has already brought up Apple&rsquo;s tracking prompt, the game doesn&rsquo;t ask again.</p>
+  <ul>
+    <li><strong>If you allow tracking,</strong> Google may use Apple&rsquo;s advertising identifier to show you ads based on your activity in other companies&rsquo; apps and websites, and to measure those ads.</li>
+    <li><strong>If you ask the app not to track,</strong> ads are not based on tracking. Nothing in the game changes, and there is no reward for allowing it.</li>
+    <li>You can change your answer at any time in your device&rsquo;s <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+  </ul>
 
   <h2 id="children">Children&rsquo;s privacy</h2>
-  <p>Backseat Runner is made to be enjoyed by players of all ages, including children. Because the app collects no personal information from anyone, it does not collect personal information from children under 13 (or the equivalent minimum age where you live). This is consistent with the U.S. Children&rsquo;s Online Privacy Protection Act (COPPA) and similar laws. The app has no ads, no purchases with real money, no chat and no links that lead out of the game.</p>
-  <p>Parents and guardians: there is no information about your child held by me to review or delete. All game progress stays on the device and can be removed by deleting the app.</p>
+  <p>Backseat Runner is a <strong>general-audience game</strong>: a casual arcade game for anyone who enjoys one. It is not made specifically for children, and it is not in the App Store&rsquo;s Kids category. Children may still play it, so the app is built to protect them.</p>
+  <p>For players who say they are under 13, the app does not collect personal information, and does not let Google&rsquo;s ad code collect it, for anything other than supporting the app&rsquo;s internal operations, which the U.S. Children&rsquo;s Online Privacy Protection Act (COPPA) Rule allows without parental consent. The persistent identifier (an identifier limited to this app or developer) and the IP address that Google&rsquo;s ad code uses for these players are used only to:</p>
+  <ul>
+    <li><strong>serve contextual ads</strong>, chosen from the app itself and a general location estimate, never from the child&rsquo;s activity over time or across other apps and websites;</li>
+    <li><strong>cap how often ads are shown</strong> (frequency capping);</li>
+    <li><strong>prevent fraud and keep the app and its ads secure</strong>;</li>
+    <li>keep the ads working: network communication to deliver ads, and finding and fixing problems in the ad code;</li>
+    <li>meet legal requirements.</li>
+  </ul>
+  <p>To make sure these identifiers are never used to contact a child, to build a profile of a child, or for behavioral (interest-based) advertising, the app turns on Google&rsquo;s child-directed treatment before the ad code starts and on every ad request; never shows Apple&rsquo;s tracking prompt, so Apple&rsquo;s advertising identifier is not available; never shows a consent form asking to personalize ads; uses no other ad network and no analytics or social code of its own (Game Center is Apple&rsquo;s); and has no accounts of its own, no chat and no way to share anything. Ads are limited to the G rating, and sensitive categories are blocked.</p>
+  <p><strong>Game Center for children.</strong> Game Center is Apple&rsquo;s service, and Apple&rsquo;s own protections for children&rsquo;s accounts apply to it. The game sends Game Center only scores and achievements, only when the device is signed in, and sends me nothing. Parents can limit Game Center features, such as adding friends and multiplayer, with Screen Time (<strong>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions &gt; Game Center</strong>).</p>
+  <p><strong>Purchases by children.</strong> Purchases go through Apple and need the Apple Account&rsquo;s confirmation. If a child&rsquo;s Apple Account is part of Family Sharing with Ask to Buy turned on, a parent approves each purchase. Parents can also turn off in-app purchases in Screen Time (<strong>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions</strong>).</p>
+  <p><strong>Parents and guardians.</strong> I hold no personal information about your child, so there is nothing on my side to review or delete. Everything the app stores is on the device and is removed when the app is deleted, which also stops any further collection by Google&rsquo;s ad code. The information Google&rsquo;s ad code handles is described above; you can ask me about it, and I will help, or contact Google directly. If you believe information about a child was collected in a way this policy does not describe, email me and I will look into it.</p>
+  <p>The operators that collect information through the app are me (see <a href="#contact">Contact</a>) and Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, phone +1 650-253-0000, through the contact options in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. I will answer parents&rsquo; questions about both.</p>
+
+  <h2 id="purchases">Purchases</h2>
+  <p>The app sells snack packs, Remove Ads, the Snack Doubler and a Starter Pack through Apple&rsquo;s In-App Purchase. Apple handles the payment, so I never see your card or payment details, your name, your email address or your Apple Account. Apple tells the app which item was bought and gives it a transaction ID, which the app keeps on your device so each purchase is delivered exactly once and it knows which items you own. Purchases need an internet connection.</p>
+  <p>Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Apple&rsquo;s handling of purchase data is covered by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. Bought snacks are part of your saved game on the device and are deleted with the app; the items you buy once can be brought back with <strong>Restore purchases</strong> (see the <a href="support.html#purchases">support page</a>).</p>
+
+  <h2 id="game-center">Game Center</h2>
+  <p>Backseat Runner works with <strong>Game Center</strong>, Apple&rsquo;s own gaming service, for leaderboards and achievements. It is optional: the game is the same with it or without it.</p>
+  <ul>
+    <li><strong>Signing in:</strong> when the app opens, iOS checks whether you are signed in to Game Center on the device. If you aren&rsquo;t, Apple may show its own Game Center sign-in sheet. The game never sees your Apple Account or password, and it never blocks play to ask.</li>
+    <li><strong>What the game sends, and only when you are signed in:</strong> after a trip, its distance (for the <em>Best trip</em> and <em>Best trip this week</em> leaderboards) and how many license plates you have collected (for the <em>License plates</em> leaderboard); and each achievement once, when you earn it. These go from the app straight to Apple through Apple&rsquo;s Game Center framework (GameKit).</li>
+    <li><strong>Nothing comes to me.</strong> I can&rsquo;t see your Game Center profile, nickname, scores or achievements beyond what Game Center shows every player. The game doesn&rsquo;t ask Game Center for your friends list or contacts, and it doesn&rsquo;t store your Game Center nickname or identifiers.</li>
+    <li><strong>Who sees your scores:</strong> Game Center shows your scores, achievements and Game Center nickname to other Game Center players, as your Game Center settings allow. Apple handles all of this under <a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center &amp; Privacy</a> and <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</li>
+    <li><strong>Your choices:</strong> sign out of Game Center, or change who can see your profile and activity, in your device&rsquo;s <strong>Settings &gt; Game Center</strong>. Without Game Center, the game sends nothing and plays the same. Parents can limit Game Center features with Screen Time (<strong>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions &gt; Game Center</strong>).</li>
+  </ul>
+  <p>Because Apple collects Game Center data, not me, it is not part of the app&rsquo;s privacy details on the App Store: Apple&rsquo;s rules for those details say developers are not responsible for disclosing data collected by Apple.</p>
+
+  <h2 id="report">Reporting an ad</h2>
+  <p>If you see an ad that is inappropriate or not suitable for the age rating, tap the gear for <strong>Settings</strong>, then <strong>Report an ad</strong>. It opens an email to <a href="mailto:backseatrunner@gmail.com?subject=Report%20an%20ad">backseatrunner@gmail.com</a> with the subject &ldquo;Report an ad&rdquo;. Please say what the ad showed, who the advertiser was and roughly when you saw it; a screenshot helps. I can block an advertiser or a whole category in AdMob. Sending the email shares your email address with me (see <a href="#retention">Data retention</a>).</p>
+
+  <h2 id="choices">Your choices</h2>
+  <ul>
+    <li><strong>Privacy choices:</strong> where Google&rsquo;s consent rules apply (for adults in the European Economic Area, the UK and Switzerland, and in some U.S. states), Settings in the game shows a <strong>Privacy choices</strong> row. It opens Google&rsquo;s form, where you can withdraw or change your consent, or opt out, at any time.</li>
+    <li><strong>Tracking:</strong> change it at any time in your device&rsquo;s <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+    <li><strong>Game Center:</strong> sign out, or choose who sees your profile, in <strong>Settings &gt; Game Center</strong>.</li>
+    <li><strong>Purchases:</strong> turn off in-app purchases with Screen Time (<strong>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions</strong>); the game then hides its real-money items.</li>
+    <li><strong>Stop all collection:</strong> delete the app.</li>
+  </ul>
+  <p>Nothing in the game depends on these choices: you get the same game and the same rewards either way.</p>
+
+  <h2 id="retention">Data retention</h2>
+  <p>This is the written retention policy for Backseat Runner:</p>
+  <ul>
+    <li><strong>On your device:</strong> game progress, the daily gift&rsquo;s days, the list of achievements already sent to Game Center and the two play counts kept for achievements, the age range, purchase records and ad timing are kept until you delete the app. Copies in device backups last until those backups are replaced or deleted. The birth year is never kept.</li>
+    <li><strong>With me:</strong> the app sends me nothing. Emails you send me, including ad reports, are kept only as long as needed to answer and follow up, and are deleted within 12 months after the conversation ends. If a child under 13 emails me, I use the email address only to reply, then delete the message and the address.</li>
+    <li><strong>Reports I see:</strong> AdMob and App Store Connect give me totals with no personal information. I keep them as long as I need them for my business and tax records.</li>
+    <li><strong>With Google:</strong> Google keeps the data its ad code collects under <a href="https://policies.google.com/technologies/retention">Google&rsquo;s retention policy</a>. For players under 13, that data is used only for the internal operations listed in <a href="#children">Children&rsquo;s privacy</a>.</li>
+    <li><strong>With Apple:</strong> Apple keeps purchase records, and your Game Center scores and achievements, under Apple&rsquo;s Privacy Policy and Game Center &amp; Privacy. Deleting the app doesn&rsquo;t remove them from Game Center.</li>
+  </ul>
+
+  <h2 id="rights">Your rights</h2>
+  <p><strong>European Economic Area, UK and Switzerland.</strong> Google&rsquo;s consent form asks adults for consent before ads are personalized and before information is stored on or read from the device for ads. Without consent, Google shows only non-personalized or limited ads. Players under 18 are not asked, and Google treats them as under the age of consent. The legal bases are consent for personalized ads, and the legitimate interest in funding a free game, preventing fraud and keeping ads working for the rest. You can withdraw consent at any time with <strong>Privacy choices</strong>. You have the right to access, correct, delete, restrict or object to the use of your data, to data portability, and to complain to your data protection authority.</p>
+  <p><strong>United States.</strong> Depending on your state (for example, California), you may have the right to know about, access, correct and delete personal information, and to opt out of its &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; for targeted advertising. I don&rsquo;t sell personal information for money. For adults who allow tracking, letting Google use data for personalized ads may count as &ldquo;sharing&rdquo; under some state laws; you can opt out at any time with <strong>Privacy choices</strong> (where shown) or by turning tracking off. The app never allows this for players under 18.</p>
+  <p>The app gives me no personal data, so for data held by Google, a request to Google is usually fastest (see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>). I&rsquo;m happy to help: email me.</p>
+
+  <h2 id="third-parties">Third parties</h2>
+  <ul>
+    <li><strong>Google LLC</strong> (Google AdMob, the Google Mobile Ads SDK and Google&rsquo;s consent tool): ads, as described above. Google and its partners may process data in the United States and other countries.</li>
+    <li><strong>Apple</strong>: the App Store, In-App Purchase, refunds and Game Center. Apple may give me general, anonymous App Store statistics (such as download and sales counts), and crash reports only if you have chosen to share analytics with app developers in your device&rsquo;s settings. None of this identifies you to me.</li>
+  </ul>
+  <p>I don&rsquo;t share information with anyone else. The <strong>Privacy policy</strong> row in the game&rsquo;s Settings opens this page in Safari.</p>
+
+  <h2 id="security">Security</h2>
+  <p>Your game data stays in the app&rsquo;s private storage on your device, protected by iOS. Google&rsquo;s ad code, Apple&rsquo;s In-App Purchase and Apple&rsquo;s Game Center use encrypted connections. The game&rsquo;s own code sends nothing over the internet: Game Center scores and achievements go to Apple only through Apple&rsquo;s Game Center framework.</p>
 
   <h2 id="delete">How to delete your data</h2>
-  <p>All of the app&rsquo;s data is on your device, so you are fully in control of it. To delete it, delete the app:</p>
+  <p>To delete everything the app has stored, delete the app:</p>
   <ul>
     <li>Touch and hold the Backseat Runner icon, tap <strong>Remove App</strong>, then <strong>Delete App</strong>; or</li>
     <li>Go to <strong>Settings &gt; General &gt; iPhone Storage</strong> (or <strong>iPad Storage</strong>), choose Backseat Runner and tap <strong>Delete App</strong>.</li>
   </ul>
-  <p>This permanently erases your saved progress from the device. (&ldquo;Offload App&rdquo; is different: it keeps your game data.) A copy may remain inside existing device backups until those backups are replaced or deleted.</p>
-  <p>Since I hold no data about you, there is nothing for you to request from me, but you are always welcome to contact me with questions. This also means the rights given by laws such as the GDPR or the CCPA, like access, correction or deletion, have no data on my side to apply to.</p>
-
-  <h2 id="security">Security</h2>
-  <p>Your game data stays in the app&rsquo;s private storage on your device, protected by iOS. Nothing is sent over the internet, so there is nothing to intercept.</p>
+  <p>This permanently erases your saved progress from the device, including your age range and any snacks you bought. Remove Ads, the Snack Doubler and the Starter Pack can be restored later with the same Apple Account; bought snacks cannot. (&ldquo;Offload App&rdquo; is different: it keeps your game data.) A copy may remain inside existing device backups until those backups are replaced or deleted. Scores and achievements already in Game Center stay with your Game Center profile; Apple handles them (see <a href="#game-center">Game Center</a>). For data held by Google, see <a href="#rights">Your rights</a>.</p>
 
   <h2 id="changes">Changes to this policy</h2>
-  <p>If a future version of the app changes how it handles information, I will update this page and the date at the top before or when that version is released, and update the app&rsquo;s privacy details on the App Store to match. Please check this page from time to time.</p>
+  <p>This version (October 23, 2026) adds Apple&rsquo;s Game Center (leaderboards and achievements) and the daily gift. The version of October 22, 2026 added the ads from Google AdMob, in-app purchases through Apple and the age question. The first version, from October 11, 2026, described a version of the app with no ads, purchases or third-party code.</p>
+  <p>If a future version of the app changes how it handles information, I will update this page and the date at the top before or when that version is released, and update the app&rsquo;s privacy details on the App Store to match.</p>
 
   <h2 id="contact">Contact</h2>
   <div class="contact">
-    <p>Questions about this policy or the app&rsquo;s privacy:</p>
+    <p>Questions about this policy, the app&rsquo;s privacy or a child&rsquo;s information:</p>
     <p>Omayya Harvey Atout<br>
     Email: <a class="email" href="mailto:backseatrunner@gmail.com">backseatrunner@gmail.com</a></p>
   </div>
